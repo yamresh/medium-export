@@ -9,12 +9,16 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@11ty/eleventy": "0.5.3",
     "clean-css": "^4.2.1",
     "axios": "^0.18.0",
-    "xml2js": "^0.4.19"
-  }
+    "xml2js": "^0.4.19",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
